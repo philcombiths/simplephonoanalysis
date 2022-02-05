@@ -1,2 +1,4 @@
 # simplephonoanalysis
- From transcription input, extracts immediate surrounding context for a set of phones.
+ From transcription input, extract immediate surrounding context for a set of phones.
+ 
+ # Philip Combiths
