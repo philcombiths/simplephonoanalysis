@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+#### NOTE: distributions do not include attached diacritics for surrounding context!
+
 Created on Feb 05 2022
 
 @author: Philip
