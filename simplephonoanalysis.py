@@ -173,5 +173,5 @@ wɑʃ
 tɪxʷu"""
 
 clean_result = cleaninput()
-dist_result = simpledistributions(phones = ['xʷ', 'ʃ'], transcription_string=clean_result)
+dist_result = simpledistributions(phones = ['k', 'x'], transcription_string=clean_result)
 analysis_result = simplephonoanalysis(dist_result)
