@@ -26,7 +26,7 @@ def cleaninput(delim="brackets", transcription_string=False):
     """
     Clean an IPA input.
     
-    Detials: input copied from a document or spreasheet for     
+    Details: input copied from a document or spreasheet for     
     phonological analysis. Extracts only IPA delineated by delimiters.
 
     Parameters
@@ -172,6 +172,46 @@ mʌxʷum
 wɑʃ
 tɪxʷu"""
 
-clean_result = cleaninput()
-dist_result = simpledistributions(phones = ['k', 'x'], transcription_string=clean_result)
+trans_string2="""[kɑ̥tɑ́]
+[ku̥su̥ʔwɑ́]
+[se̥ʔé]
+[ⁿdikí]
+[ti̥hí]
+[kíʔ]
+[sijú]
+[sulɑ́]
+[lɑʔɑ́]
+[loʔó]
+[ⁿɡuʃí]
+[kinó]
+[ki̥sú]
+[tijé]
+[ʃi̥ʔí]
+[tɑ̥ʔɑ́]
+[tu̥ʔwɑ́]
+[hɑ́ʔ]
+"""
+
+trans_string3="""[kɑ̥tɑ]
+[ku̥su̥ʔwɑ]
+[se̥ʔe]
+[ⁿdiki]
+[ti̥hi]
+[kiʔ]
+[siju]
+[sulɑ]
+[lɑʔɑ]
+[loʔo]
+[ⁿɡuʃi]
+[kino]
+[ki̥su]
+[tije]
+[ʃi̥ʔi]
+[tɑ̥ʔɑ]
+[tu̥ʔwɑ]
+[hɑʔ]
+"""
+
+clean_result = cleaninput(transcription_string=trans_string3)
+dist_result = simpledistributions(phones = ['i̥', 'i'], transcription_string=clean_result)
 analysis_result = simplephonoanalysis(dist_result)
